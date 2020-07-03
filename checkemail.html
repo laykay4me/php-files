@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>trying email confirmation on my own</title>
+
+    <script>
+        function checkEmail() {
+          email = document.getElementById('email').value
+
+          if (email != "") document.getElementById('info').innerHTML = "no input"
+        }
+    </script>
+  </head>
+  <body>
+        Email:<br /><input type="text" id="email" name="email" value="" /><br />
+        <br />
+        <input type="submit" name="submit" value="Go" onclick="checkEmail()" />
+        <input type="reset" name="reset" value="Clear" />
+    
+    <div id="info"></div>
+
+  </body>
+</html>
